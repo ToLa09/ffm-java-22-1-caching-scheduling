@@ -18,4 +18,8 @@ public class StockPriceController {
         return service.getStockPriceApple();
     }
 
+    @GetMapping("/clearcache")
+    public void clearCache() {
+        service.clearCache();
+    }
 }
