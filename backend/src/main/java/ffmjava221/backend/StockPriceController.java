@@ -14,7 +14,7 @@ public class StockPriceController {
 
 
     @GetMapping("/stockPriceApple")
-    public StockPrice getStockPriceApple () {
+    public StockPrice getStockPriceApple () throws InterruptedException {
         return service.getStockPriceApple();
     }
 
